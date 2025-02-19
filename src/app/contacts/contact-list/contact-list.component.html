@@ -1,0 +1,26 @@
+<div class="container">
+  <input [(ngModel)]="searchQuery" (ngModelChange)="searchContacts()" placeholder="Search contacts" />
+
+  <button (click)="toggleForm()" >Add Contact</button>
+
+  <div *ngIf="isFormVisible">
+    <app-contact-form (formSubmitted)="onFormSubmitted($event)" (formCancelled)="onFormCancelled()"></app-contact-form> <!-- Форма для додавання контакту -->
+  </div>
+
+  <ul>
+    <li *ngFor="let contact of contacts">
+      <div class="container__info">
+        <span>{{ contact.firstName }}  {{ contact.lastName }}</span>
+      <span class="contact-phone">{{ contact.phone }}</span>
+      </div>
+
+      <div class="container__buttons">
+        <button (click)="viewContactDetails(contact.id)">View Details</button>
+        <button (click)="deleteContact(contact.id)">Delete</button>
+      </div>
+
+    </li>
+  </ul>
+</div>
+
+

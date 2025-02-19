@@ -1,59 +1,71 @@
-# AppContacts
+# Contact Management App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+This project is a web application for managing contacts. The app allows you to add, edit, view, and delete contacts. Contacts are stored in **Local Storage**.
 
-## Development server
+## Functionality:
 
-To start a local development server, run:
+- **View Contact List**: You can view a list of all contacts, including their first names, last names, and phone numbers.
+- **Add Contacts**: You can add new contacts via a form that allows you to enter the first name, last name, phone number, email, birth date, and address.
+- **View Contact Details**: Each contact has an option to view additional information, including email, birth date, and address.
+- **Delete Contacts**: You can delete contacts from the list.
+- **Form Validation**: When adding a new contact, data validation is performed (first name, last name, phone, and email).
 
-```bash
+## Tech Stack:
+
+- **Angular** - for frontend development.
+- **CSS/SCSS** - for styling components.
+- **LocalStorage** - for storing contact data.
+
+## Project Structure:
+
+### Main Components:
+
+1. **ContactListComponent**: Component for displaying the list of all contacts.
+2. **ContactFormComponent**: Form for adding/editing contacts.
+3. **ContactDetailComponent**: Component for viewing details of a specific contact.
+4. **ContactService**: Service for interacting with contacts (retrieving, adding, deleting).
+
+### Routes:
+
+- **/add-contact** - route to the form for adding a new contact.
+- **/contact/:id** - route to view the details of a contact by its ID.
+- **/** - the homepage displaying the list of contacts.
+
+## How to Run the Project:
+
+### 1. Clone the repository:
+
+```
+git clone <your-repository-url>
+```
+
+### 2. Install dependencies:
+
+Navigate to the project directory and run:
+
+```
+npm install
+```
+
+### 3. Run the app:
+
+```
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open your browser and go to [http://localhost:4200](http://localhost:4200).
 
-## Code scaffolding
+## File Descriptions:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **app.component.ts**: Main component responsible for routing.
+- **contact-list.component.ts**: Component for displaying the list of contacts and searching.
+- **contact-form.component.ts**: Form component for adding or editing contacts.
+- **contact-detail.component.ts**: Component for viewing detailed information about a contact.
+- **contact.service.ts**: Service for managing contacts (retrieving, adding, deleting).
+- **app.routes.ts**: Routing file for the app.
 
-```bash
-ng generate component component-name
-```
+## Improvements:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Contact Editing**: Add functionality to edit existing contacts.
+- **Authentication**: Add authentication to access contacts.
+- **Filtering and Sorting**: Implement filtering and sorting of contacts by various fields.
