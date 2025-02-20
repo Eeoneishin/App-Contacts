@@ -6,7 +6,7 @@ import { provideRouter } from '@angular/router';
 
 bootstrapApplication(AppComponent, {
   providers: [
-    provideRouter(appRoutes),  
+    provideRouter(appRoutes),
   ],
 })
   .catch((err) => console.error(err));

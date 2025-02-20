@@ -4,7 +4,7 @@
   <button (click)="toggleForm()" >Add Contact</button>
 
   <div *ngIf="isFormVisible">
-    <app-contact-form (formSubmitted)="onFormSubmitted($event)" (formCancelled)="onFormCancelled()"></app-contact-form> <!-- Форма для додавання контакту -->
+    <app-contact-form (formSubmitted)="onFormSubmitted($event)" (formCancelled)="onFormCancelled()"></app-contact-form> 
   </div>
 
   <ul>

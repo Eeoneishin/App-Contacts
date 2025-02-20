@@ -16,19 +16,14 @@ export default {
   {
     "renderMode": 0,
     "route": "/App-Contacts/contact/*"
-  },
-  {
-    "renderMode": 2,
-    "route": "/App-Contacts/add-contact"
   }
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 536, hash: '027a6ef3a8d42714dae0dde6753cd655dfbe9c7fa02db63879f45302c5dff0c9', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 1049, hash: '01a1da1daba5a00bec8eddea3ca33fb9c4241a8fcb83a403ef6a669518bec06c', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'index.html': {size: 3535, hash: 'f8b558547c485274b9709641ae79b33edd3ad931eac4b676148b9547f9c8a33b', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
-    'contact/id/index.html': {size: 1694, hash: 'fc6eac8ff555f09686f249da16431ca574c6bd2f964c0d57548fd410cbec890e', text: () => import('./assets-chunks/contact_id_index_html.mjs').then(m => m.default)},
-    'add-contact/index.html': {size: 4731, hash: '1050e912faf4641d5e8389c19b1a6142f69f7b4b1062eedddcc57017685392e3', text: () => import('./assets-chunks/add-contact_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 536, hash: '5c2cd6672324b47c600c8f28b97b6f5485276102aba398234b4d1b7d5baa0b90', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 1049, hash: 'a16308eba49494d34edc42fe52d85565bd493ca802d1593b15b3c9422dea0ada', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'contact/id/index.html': {size: 1694, hash: 'aa5ae22734852cfd2ca2904cf6c4e93d46f8112d38d1757e191f93ae524ee74e', text: () => import('./assets-chunks/contact_id_index_html.mjs').then(m => m.default)},
+    'index.html': {size: 3535, hash: '80b1af4818983901ba3bc9bea160b47e65c5a5d6f8bdb4788cc5c7f6fc1abc8b', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
     'styles-5INURTSO.css': {size: 0, hash: 'menYUTfbRu8', text: () => import('./assets-chunks/styles-5INURTSO_css.mjs').then(m => m.default)}
   },
 };
