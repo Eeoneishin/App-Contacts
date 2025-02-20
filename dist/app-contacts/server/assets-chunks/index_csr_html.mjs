@@ -3,12 +3,12 @@ export default `<!doctype html>
 <head>
   <meta charset="utf-8">
   <title>AppContacts</title>
-  <base href="https://eeoneishin.github.io/App-Contacts/">
+  <base href="/App-Contacts/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="styles-5INURTSO.css"></head>
 <body ngcm="">
   <app-root></app-root>
-<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-3SYBVBTC.js" type="module"></script></body>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-E75ZORH3.js" type="module"></script></body>
 </html>
 `;

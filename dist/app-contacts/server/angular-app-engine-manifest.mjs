@@ -1,6 +1,6 @@
 
 export default {
-  basePath: 'https://eeoneishin.github.io/App-Contacts',
+  basePath: '/App-Contacts',
   supportedLocales: {
   "en-US": ""
 },

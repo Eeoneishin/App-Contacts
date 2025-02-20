@@ -1,14 +1,24 @@
-import { Injectable } from '@angular/core';
-
+import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { Contact } from '../interfaces/contacts.interface';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ContactService {
-  private contacts: Contact[] = JSON.parse(localStorage.getItem('contacts') || '[]');
 
-  constructor() {}
+
+
+export class ContactService {
+  private contacts: Contact[] = [];
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+    if (isPlatformBrowser(this.platformId)) {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        this.contacts = JSON.parse(localStorage.getItem('contacts') || '[]');
+      }
+    }
+  }
+
 
   getContacts(): Contact[] {
     return this.contacts;
