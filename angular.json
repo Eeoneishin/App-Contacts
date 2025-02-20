@@ -35,12 +35,13 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "ipts": [],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
-            }
+            },
+            "baseHref": "/App-Contacts/"
           },
           "configurations": {
             "production": {
