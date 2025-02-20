@@ -1,0 +1,14 @@
+<div *ngIf="contact" class="contact-detail-container">
+  <h2 class="contact-detail-heading">Contact Details</h2>
+
+  <div class="contact-detail-info">
+    <p><strong>First Name:</strong> {{ contact.firstName }}</p>
+    <p><strong>Last Name:</strong> {{ contact.lastName }}</p>
+    <p><strong>Phone:</strong> {{ contact.phone }}</p>
+    <p><strong>Email:</strong> {{ contact.email || 'No information added' }}</p>
+    <p><strong>Birth Date:</strong> {{ contact.birthDate || 'No information added' }}</p>
+    <p><strong>Address:</strong> {{ contact.address || 'No information added' }}</p>
+  </div>
+
+  <button routerLink="/" class="back-button">Back to Contacts</button>
+</div>

@@ -1,0 +1,7 @@
+{
+  "routes": {
+    "/App-Contacts": {},
+    "/App-Contacts/add-contact": {},
+    "/App-Contacts/contact/id": {}
+  }
+}

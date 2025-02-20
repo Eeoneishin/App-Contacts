@@ -1,0 +1,26 @@
+<form (ngSubmit)="onSubmit()">
+  <label for="firstName">First Name</label>
+  <input id="firstName" [(ngModel)]="contact.firstName" name="firstName" required [ngClass]="{'invalid': !contact.firstName}" />
+  <div *ngIf="!contact.firstName" class="error-message">First Name is required</div>
+
+  <label for="lastName">Last Name</label>
+  <input id="lastName" [(ngModel)]="contact.lastName" name="lastName" required [ngClass]="{'invalid': !contact.lastName}" />
+  <div *ngIf="!contact.lastName" class="error-message">Last Name is required</div>
+
+  <label for="phone">Phone</label>
+  <input id="phone" [(ngModel)]="contact.phone" name="phone" required pattern="^[0-9]{10}$" [ngClass]="{'invalid': !isPhoneValid()}" />
+  <div *ngIf="!isPhoneValid()" class="error-message">Phone number must be 10 digits</div>
+
+  <label for="email">Email</label>
+  <input id="email" [(ngModel)]="contact.email" name="email" required email [ngClass]="{'invalid': !isEmailValid()}" />
+  <div *ngIf="!isEmailValid()" class="error-message">Please enter a valid email address</div>
+
+  <label for="birthDate">Birth Date</label>
+  <input id="birthDate" [(ngModel)]="contact.birthDate" name="birthDate" type="date" required />
+
+  <label for="address">Address</label>
+  <input id="address" [(ngModel)]="contact.address" name="address" />
+
+  <button type="submit" [disabled]="!isFormValid()">Save</button>
+  <button type="button" (click)="cancel()">Cancel</button>
+</form>

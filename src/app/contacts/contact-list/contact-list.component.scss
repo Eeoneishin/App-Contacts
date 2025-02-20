@@ -1,0 +1,108 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    width: 56%;
+  }
+
+  &__name {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &__icon-phone {
+    width: 10px;
+    height: 10px;
+  }
+
+  &__icon-contact{
+    width: 15px;
+    height: 15px;
+  }
+}
+.contact-phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+  }
+
+input {
+  display: block;
+  margin-right: auto;
+	margin-left: auto;
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0 10px;
+}
+
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+  background-color: #e9ecef;
+}
+
+span {
+  font-size: 16px;
+}
+
+button {
+  font-size: 14px;
+}
+
+button:nth-child(1) {
+  background-color: #2775be;
+}
+
+button:nth-child(2) {
+  background-color: #8f2630;
+}
+
+button:nth-child(1):hover {
+  background-color: #164169;
+}
+
+button:nth-child(2):hover {
+  background-color: #411f22;
+}
