@@ -38,7 +38,11 @@ export class ContactService {
   }
 
   private saveContacts(): void {
-    localStorage.setItem('contacts', JSON.stringify(this.contacts));
+    try {
+      localStorage.setItem('contacts', JSON.stringify(this.contacts));
+    } catch (error) {
+      console.error('Error saving contacts to localStorage', error);
+    }
   }
-  
+
 }
