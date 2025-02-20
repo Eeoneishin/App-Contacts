@@ -7,7 +7,12 @@
   &__info{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 56%;
+  }
+
+  &__name {
+    display: flex;
+    gap: 10px;
   }
 
   &__buttons {
@@ -16,8 +21,21 @@
     justify-content: center;
     gap: 10px;
   }
+
+  &__icon-phone {
+    width: 10px;
+    height: 10px;
+  }
+
+  &__icon-contact{
+    width: 15px;
+    height: 15px;
+  }
 }
 .contact-phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-weight: bold;
   }
 
@@ -74,17 +92,17 @@ button {
 }
 
 button:nth-child(1) {
-  background-color: #28a745;
+  background-color: #2775be;
 }
 
 button:nth-child(2) {
-  background-color: #dc3545;
+  background-color: #8f2630;
 }
 
 button:nth-child(1):hover {
-  background-color: #218838;
+  background-color: #164169;
 }
 
 button:nth-child(2):hover {
-  background-color: #c82333;
+  background-color: #411f22;
 }

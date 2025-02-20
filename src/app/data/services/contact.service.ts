@@ -40,4 +40,5 @@ export class ContactService {
   private saveContacts(): void {
     localStorage.setItem('contacts', JSON.stringify(this.contacts));
   }
+  
 }
