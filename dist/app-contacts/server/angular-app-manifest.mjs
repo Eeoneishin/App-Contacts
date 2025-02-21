@@ -2,28 +2,26 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: 'https://eeoneishin.github.io/App-Contacts/',
+  baseHref: 'C:/Program Files/Git/App-Contacts/',
   locale: undefined,
   routes: [
   {
     "renderMode": 2,
-    "route": "/App-Contacts"
+    "route": "/Program%20Files/Git/App-Contacts"
   },
   {
     "renderMode": 2,
-    "route": "/App-Contacts/contact/id"
+    "route": "/Program%20Files/Git/App-Contacts/contact/id"
   },
   {
     "renderMode": 0,
-    "route": "/App-Contacts/contact/*"
+    "route": "/Program%20Files/Git/App-Contacts/contact/*"
   }
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 536, hash: '5c2cd6672324b47c600c8f28b97b6f5485276102aba398234b4d1b7d5baa0b90', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 1049, hash: 'a16308eba49494d34edc42fe52d85565bd493ca802d1593b15b3c9422dea0ada', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'index.html': {size: 3535, hash: '80b1af4818983901ba3bc9bea160b47e65c5a5d6f8bdb4788cc5c7f6fc1abc8b', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
-    'contact/id/index.html': {size: 1694, hash: 'aa5ae22734852cfd2ca2904cf6c4e93d46f8112d38d1757e191f93ae524ee74e', text: () => import('./assets-chunks/contact_id_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 528, hash: '729b69bf8beb44d89637a621eee00ffb6f0cfba10a4e7a6048f01eac4abd4843', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 1041, hash: '886cfbf326ec4055c6bfc8fb414ea864ddf528ed09e64161d4bcdb706396a0ea', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
     'styles-5INURTSO.css': {size: 0, hash: 'menYUTfbRu8', text: () => import('./assets-chunks/styles-5INURTSO_css.mjs').then(m => m.default)}
   },
 };
